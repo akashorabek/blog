@@ -1,0 +1,44 @@
+.search_schedule {
+    display: flex;
+    align-items: center;
+}
+.search_block {
+    background-color: rgb(39, 39, 39);
+    height: 170px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_input {
+    height: 40px;
+    width: 85%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid gray;
+    font-size: 20px;
+    transition: .5s;
+}
+.search_input:focus {
+    border-color: red;
+}
+.input_btn {
+    width: 100px;
+}
+.schedule_block {
+    background-color: #ff440a;
+    height: 170px;
+    width: 30%;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+}
+.schedule_block p {
+    color: white;
+}
+.schedule_block h1 {
+    color: white;
+    font-weight: 600;
+}

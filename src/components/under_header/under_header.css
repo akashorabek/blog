@@ -1,0 +1,38 @@
+.under_header_title h1 {
+    color: white;
+    transition: .2s;
+}
+.under_header_title h1:hover {
+    color:  #d83200;
+}
+.under_header {
+    position: relative;
+    height: 500px;
+    cursor: -webkit-grab;
+}
+.under_header:hover::before {
+    background-color: rgba(1, 1, 1, 0.5);
+}
+.under_header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(1, 1, 1, 0.2);
+    transition: .2s;
+}
+.under_header img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.under_header_title {
+    position: absolute;
+    bottom: 70px;
+    left: 30px;
+    font-size: 34px;
+    width: 90%;
+}

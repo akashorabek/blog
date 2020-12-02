@@ -1,0 +1,120 @@
+.products_block {
+    padding: 80px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.products_title {
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(27,27,27,0.05);
+    position: relative;
+}
+.products_title h2 {
+    font-size: 28px;
+}
+.products_title::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    bottom: -5px;
+    left: 0;
+    background-color: #f3701d;
+}
+.products_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.product_item {
+    width: calc(100% / 4 - 2%);
+}
+.product_img {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.product_img:hover img {
+    transform: scale(1.1);
+}
+.product_img_inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(1, 1, 1, 0.4);
+    transition: .3s;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.product_img_inner:hover {
+    opacity: 1;
+}
+.product_img_inner_icons {
+    display: flex;
+    align-items: center;
+}
+.product_img_inner:hover .product_img_inner_icon_block:nth-child(1) {
+    animation: icon_scale .3s forwards;
+}
+.product_img_inner:hover .product_img_inner_icon_block:nth-child(2) {
+    animation: icon_scale .3s forwards;
+    animation-delay: 0.13s;
+}
+.product_img_inner_icon_block {
+    background-color: #f3701d;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    transform: scale(0);
+    transition: .3s;
+}
+@keyframes icon_scale {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.product_img_inner_icon_block:hover {
+    background-color: #e23826;
+    
+}
+.product_img_inner_icon_block i {
+    font-size: 16px;
+    color: white;
+}
+.product_img img {
+    transition: .3s;
+}
+.product_text {
+    margin-top: 30px;
+}
+.product_text a {
+    font-size: 24px;
+    color: black;
+    transition: .2s;
+    font-weight: 700;
+}
+.product_text a:hover {
+    color: #f3701d;
+}
+.product_text p {
+    color: #5e5e5e;
+    margin: 30px 0;
+    font-size: 16px;
+}
+.product_text h3 {
+    font-size: 22px;
+    color: #f3701d ;
+}
